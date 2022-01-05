@@ -1,27 +1,23 @@
-const random = Math.floor(Math.random() * 3);
-const played = "";
+function displayScore() {
+    const random = Math.floor(Math.random() * 3);
+    let played = "";
 
-function computerPlay(random) {
+    function computerPlay() {
 
-        switch (random) {
-            case 0:
-                played = "Rock!";
-                break;
-            case 1:
-                played = "Paper!";
-                break;
-            case 2:
-                played = "Scissors!";
-                break;
-        }
-        return played;
+            switch (random) {
+                case 0:
+                    played = "Rock!";
+                    break;
+                case 1:
+                    played = "Paper!";
+                    break;
+                case 2:
+                    played = "Scissors!";
+                    break;
+            }
+            return played;
+    }
 
+    let output = document.getElementById('result');
+    output.innerHTML = "Result is: " + computerPlay();
 }
-console.log(played);
-// function displayScore() {
-//     let output = document.getElementById('result');
-//     output.innerHTML = "Result is: " + outcome(score);
-// }
- 
-// console.log(displayScore());
-// console.log(result);

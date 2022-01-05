@@ -18,6 +18,18 @@ header {
     color: indigo;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    margin: 2em;
+    width: 50px;
+    height: 30px;
+}
 
 footer {
     height: 10vh;
@@ -30,3 +42,4 @@ footer {
     background-color: bisque;
     color: indigo;
 }
+
