@@ -19,7 +19,7 @@ function outcome(score) {
  
 function displayScore () {
     let output = document.getElementById('result');
-    output.innerHTML = "Result is: " + outcome(score);
+    output.innerHTML = "Result is: " + result;
 }
  
 console.log(displayScore());
