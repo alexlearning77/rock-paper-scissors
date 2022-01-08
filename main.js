@@ -19,5 +19,5 @@ function displayScore() {
     }
 
     let output = document.getElementById('result');
-    output.innerHTML = "Result is: " + computerPlay();
+    output.innerHTML = `Computer played: ${computerPlay()}`;
 }
